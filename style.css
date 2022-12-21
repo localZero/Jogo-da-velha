@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* choice */
+.choice {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+.choice button {
+    color: white;
+    background-color: #FF3860;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.choice h1 {
+    font-size: 50px;
+}
+.choice p {
+    font-size: 30px;
+}
+.choice .container {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice .container .box {
+    width: 30vw;
+    height: 100%;
+    margin-right: 10px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.choice .container .box input {
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: white 2px solid;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+.choice .container .box h1 {
+    font-size: 40px;
+}
+
+.choice .container .box .listButtons {
+    width: 100%;
+    height: 6vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.choice .container .box .listButtons button {
+    height: 100%;
+    width: 4vw;
+    font-size: 40px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* inGame */
+.inGame {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.inGame .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.inGame .score {
+    margin-top: 30px;
+}
+
+.inGame .container .box {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.inGame button {
+    color: white;
+    background-color: #FF3860;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* colors X and O */
+.X {
+    color: rgb(0, 110, 255) !important;
+}
+
+.O {
+    color: rgb(60, 255, 0) !important;
+}
+
+.active {
+    border: 2px solid !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+}

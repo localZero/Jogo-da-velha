@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js" defer></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <title>Zero</title>
+    </head>
+    <body>
+        <div class="choice">
+            <h1>Jogo da Velha</h1>
+            <p>Escolha qualquer um dos lados, e o nome, sera sorteado quem vai começar primeiro.</p>
+            <div class="container">
+                <div class="box">
+                    <h1>Player 1 - Escolha X ou O</h1>
+                    <input
+                        type="text"
+                        id="inputOne"
+                        placeholder="Escolha seu Nome"
+                    />
+                    <div class="listButtons">
+                        <button
+                            onclick="selectTeam('One','X1')"
+                            id="selectButton"
+                            class="X x1"
+                        >
+                            X
+                        </button>
+                        <button
+                            onclick="selectTeam('One','O1')"
+                            id="selectButton"
+                            class="O o1"
+                        >
+                            O
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1>Player 2 - Escolha X ou O</h1>
+                    <input
+                        type="text"
+                        id="inputTwo"
+                        placeholder="Escolha seu Nome"
+                    />
+                    <div class="listButtons">
+                        <button
+                            onclick="selectTeam('Two','X2')"
+                            id="selectButton"
+                            class="X x2"
+                        >
+                            X
+                        </button>
+                        <button
+                            onclick="selectTeam('Two','O2')"
+                            id="selectButton"
+                            class="O o2"
+                        >
+                            O
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button id="startGame" onclick="startGame()">Começar</button>
+        </div>
+        <div class="inGame hide">
+            <h1 id="turn">Vez de Juia</h1>
+            <div class="container">
+                <div id="1" class="box boxJ 1">1</div>
+                <div id="2" class="box boxJ 2">2</div>
+                <div id="3" class="box boxJ 3">3</div>
+                <div id="4" class="box boxJ 4">4</div>
+                <div id="5" class="box boxJ 5">5</div>
+                <div id="6" class="box boxJ 6">6</div>
+                <div id="7" class="box boxJ 7">7</div>
+                <div id="8" class="box boxJ 8">8</div>
+                <div id="9" class="box boxJ 9">9</div>
+            </div>
+            <div class="score">
+                <h1 id="score">Jogador: 1 / Jogador: 2</h1>
+            </div>
+            <button class="buttonContinue hide" onclick="nextGame()">Continuar</button>
+        </div>
+    </body>
+</html>
